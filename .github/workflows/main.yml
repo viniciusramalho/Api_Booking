@@ -22,3 +22,16 @@ jobs:
     
     # executar os testes de Functional
     - run: npm run test:functional
+
+    - name: Upload Screenshots
+      uses: actions/upload-artifact@v2.2.4
+      if: failure()
+      with:
+        name: screenshots
+        path: cypress/screenshots
+    - name: Upload Videos
+      uses: actions/upload-artifact@v2.2.4
+      if: always()
+      with:
+        name: videos
+        path: cypress/videos
