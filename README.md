@@ -2,7 +2,7 @@
 > Projeto para estudar técnicas com Cypress para testes de API REST
 
 Chapter 4 do Agilizei Bootcamp
-
+![](bookin.spec.js.gif)
 
 
 ## Técnicas desenvolvidas com o projeto:
